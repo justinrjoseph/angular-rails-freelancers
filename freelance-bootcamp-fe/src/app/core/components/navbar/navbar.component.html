@@ -1,0 +1,50 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a
+          routerLink="/documents"
+          routerLinkActive="active"
+          class="nav-link">
+          Documents
+        </a>
+      </li>
+      <li class="nav-item">
+        <div
+          ngbDropdown
+          class="d-inline-block dropdown-links dropdown">
+          <button
+            ngbDropdownToggle
+            class="btn btn-outline-primary"
+            id="proposal-dropdown">
+            Proposals
+          </button>
+          <div
+            class="dropdown-menu"
+            aria-labelledby="proposal-dropdown">
+            <a
+              routerLink="/proposals"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="dropdown-item">
+              List
+            </a>
+            <a
+              routerLink="/proposals/new"
+              routerLinkActive="active"
+              class="dropdown-item">
+              Create
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

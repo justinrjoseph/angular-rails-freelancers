@@ -1,0 +1,23 @@
+<div *ngFor="let document of documents" class="card document">
+  <img [src]="document.image_url" class="card-img-top">
+
+  <div class="card-block">
+    <h4 class="card-title">{{ document.title }}</h4>
+
+    <p class="card-text">
+      <small class="text-muted">
+        Last Updated: {{ document.updated_at | date }}
+      </small>
+    </p>
+    
+    <p class="card-description">{{ document.description }}</p>
+  
+    <div>
+      <a
+        [href]="document.file_url"
+        class="btn btn-primary btn-lg">
+        Download File
+      </a>
+    </div>
+  </div>
+</div>

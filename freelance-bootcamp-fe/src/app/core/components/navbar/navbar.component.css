@@ -1,0 +1,21 @@
+.navbar {
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, .5);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+}
